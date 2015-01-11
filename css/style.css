@@ -42,7 +42,7 @@ img::selection      {background: none; width: 100%; }
 img::-moz-selection {background: none; width: 100%; }
 
 .fn-clear:after             { visibility:hidden; display:block; font-size:0; content:" "; clear:both; height:0; }
-.fn-clear                   { zoom:1; /* for IE6 IE7 */ color: #888;}
+.fn-clear                   { zoom:1; /* for IE6 IE7 */ }
 body .fn-hide               { display:none; }
 .fn-left,.fn-right          { display:inline; }
 .fn-left                    { float:left; }
