@@ -1,6 +1,7 @@
 markdown:         rdiscount
 highlighter:         true
-paginate:         4
+paginate:         5
+paginate_path:    "page:num"
 
 title:            yongjianqin的博客
 url:              http://yongjianqin.github.io/
