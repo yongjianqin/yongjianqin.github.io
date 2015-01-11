@@ -24,8 +24,8 @@
         </div>
         <nav id="nav">
             <ul>
-                <li class="fn-clear"><a href="{{ site.url }}" rel="nofollow" class="action"><i class="icon-home"></i> Home</a></li>
-                <li class="fn-clear"><a href="{{ site.url }}/archives.html"><i class="icon-list-ul"></i> Archives</a></li>
+                <li class="fn-clear"><a href="{{ site.url }}" rel="nofollow" class="action"><i class="icon-home"></i> 主页</a></li>
+                <li class="fn-clear"><a href="{{ site.url }}/archives.html"><i class="icon-list-ul"></i> 分类</a></li>
                 <li class="fn-clear"><a href="{{ site.url }}/contact.html"><i class="icon-envelope-alt"></i> Contact</a></li>
                 <li class="fn-clear"><a href="{{ site.follow.twitter }}"><i class="icon-twitter"></i> Twitter</a></li>
             </ul>
@@ -66,16 +66,16 @@ $(document).ready(function() {
     var navs, url, cur, i;
     navs = $("#nav li a");
     for(i = 1 ; i < navs.length; i++ ){
-    url = navs[i].href;
-    cur = window.location.href;
-    if(cur.indexOf(url) !=-1) {
-        navs[i].className = "action";
-        navs[0].className = "";
-    }
-    if(cur != navs[0].href) {
-        navs[0].className = "";
-    }
-} 
+        url = navs[i].href;
+        cur = window.location.href;
+        if(cur.indexOf(url) !=-1) {
+            navs[i].className = "action";
+            navs[0].className = "";
+        }
+        if(cur != navs[0].href) {
+            navs[0].className = "";
+        }
+    } 
 });
 </script>
 </body>
