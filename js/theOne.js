@@ -6,7 +6,7 @@
 $(document).ready(function() {
 
 /** hightlight Menu **/
-var navs, url, cur, i;
+/*var navs, url, cur, i;
 navs = $("#nav li a");
 for(i = 1 ; i < navs.length; i++ ){
     url = navs[i].href;
@@ -18,7 +18,7 @@ for(i = 1 ; i < navs.length; i++ ){
     if(cur != navs[0].href) {
         navs[0].className = "";
     }
-}
+}*/
 /** scroll To **/
 var scrollTo = {
     nodeName: "J-backTop",
