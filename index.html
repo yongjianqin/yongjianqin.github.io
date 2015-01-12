@@ -5,9 +5,15 @@ date: Index
 {% for rpost in paginator.posts %}
 	<article class="post fn-clear">
         <h2 class="post-title"><a href="{{ site.url }}{{ rpost.url }}" title="{{ rpost.title }}" rel="bookmark">{{ rpost.title }}</a></h2>
-        <p class="time"><time pubdate="{{ rpost.date }}">{{ rpost.date | date_to_string }}</time></p>
+        <i class="time"><time class="icon-time" pubdate="{{ rpost.date }}">{{ rpost.date | date_to_string }}</time></i>   
+        <i class="space"></i>
+        <i class="icon-book"></i>
+        <a class="post-category" href="archives.html#{{ rpost.categories }}">{{ rpost.categories }}</a>
         {% if site.indexContent == true %}
-        {{ rpost.content }}
+		<div class="post-main">
+        {{ rpost.content | split:'<!-- more -->'| first }}
+        <div class="readall"><a href="{{ rpost.url }}" id="post-readall">阅读全文&nbsp;<i class="icon-star-empty"></i></a></div>
+        </div>
         {% else %}
         <p>{{ rpost.description }}</p>
         {% endif %}
